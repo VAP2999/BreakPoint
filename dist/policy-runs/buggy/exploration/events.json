@@ -1,0 +1,146 @@
+{
+  "status": "completed",
+  "context_id": "84b6580a-b568-482c-97ae-b77eebfb60ca",
+  "actions": [
+    {
+      "index": 1,
+      "action": {
+        "type": "click",
+        "name": "Add item"
+      },
+      "before": {
+        "quantity": 1,
+        "total_cents": 2400,
+        "displayed_total": "$24.00"
+      },
+      "status": "completed",
+      "after": {
+        "quantity": 2,
+        "total_cents": 4800,
+        "displayed_total": "$48.00"
+      }
+    },
+    {
+      "index": 2,
+      "action": {
+        "type": "click",
+        "name": "Remove item"
+      },
+      "before": {
+        "quantity": 2,
+        "total_cents": 4800,
+        "displayed_total": "$48.00"
+      },
+      "status": "completed",
+      "after": {
+        "quantity": 1,
+        "total_cents": 2400,
+        "displayed_total": "$24.00"
+      }
+    },
+    {
+      "index": 3,
+      "action": {
+        "type": "click",
+        "name": "Remove item"
+      },
+      "before": {
+        "quantity": 1,
+        "total_cents": 2400,
+        "displayed_total": "$24.00"
+      },
+      "status": "completed",
+      "after": {
+        "quantity": 0,
+        "total_cents": 2400,
+        "displayed_total": "$24.00"
+      }
+    }
+  ],
+  "console": [],
+  "page_errors": [],
+  "screenshots": [
+    "exploration/00.png",
+    "exploration/01.png",
+    "exploration/02.png",
+    "exploration/03.png"
+  ],
+  "decisions": [
+    {
+      "step": 1,
+      "observation": {
+        "quantity": 1,
+        "total_cents": 2400,
+        "displayed_total": "$24.00",
+        "enabled_buttons": [
+          "Add item",
+          "Remove item",
+          "Reset cart"
+        ]
+      },
+      "status": "validated",
+      "decision": {
+        "type": "click",
+        "name": "Add item",
+        "summary": "Offline fixture policy: add item."
+      }
+    },
+    {
+      "step": 2,
+      "observation": {
+        "quantity": 2,
+        "total_cents": 4800,
+        "displayed_total": "$48.00",
+        "enabled_buttons": [
+          "Add item",
+          "Remove item",
+          "Reset cart"
+        ]
+      },
+      "status": "validated",
+      "decision": {
+        "type": "click",
+        "name": "Remove item",
+        "summary": "Offline fixture policy: remove item."
+      }
+    },
+    {
+      "step": 3,
+      "observation": {
+        "quantity": 1,
+        "total_cents": 2400,
+        "displayed_total": "$24.00",
+        "enabled_buttons": [
+          "Add item",
+          "Remove item",
+          "Reset cart"
+        ]
+      },
+      "status": "validated",
+      "decision": {
+        "type": "click",
+        "name": "Remove item",
+        "summary": "Offline fixture policy: remove item."
+      }
+    }
+  ],
+  "initial": {
+    "quantity": 1,
+    "total_cents": 2400,
+    "displayed_total": "$24.00"
+  },
+  "stop_reason": "contract_candidate",
+  "final": {
+    "quantity": 0,
+    "total_cents": 2400,
+    "displayed_total": "$24.00"
+  },
+  "contract": {
+    "status": "fail",
+    "contract": "empty-cart-zero-total",
+    "expected_cents": 0,
+    "actual_cents": 2400
+  },
+  "trace": "exploration/trace.zip",
+  "duration_ms": 1719
+}

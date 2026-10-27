@@ -1,0 +1,48 @@
+{
+  "status": "completed",
+  "context_id": "8a3eccd9-8a66-4c12-ac39-9e503d8bba99",
+  "actions": [
+    {
+      "index": 1,
+      "action": {
+        "type": "click",
+        "name": "Remove item"
+      },
+      "before": {
+        "quantity": 1,
+        "total_cents": 2400,
+        "displayed_total": "$24.00"
+      },
+      "status": "completed",
+      "after": {
+        "quantity": 0,
+        "total_cents": 0,
+        "displayed_total": "$0.00"
+      }
+    }
+  ],
+  "console": [],
+  "page_errors": [],
+  "screenshots": [
+    "replay/00.png",
+    "replay/01.png"
+  ],
+  "initial": {
+    "quantity": 1,
+    "total_cents": 2400,
+    "displayed_total": "$24.00"
+  },
+  "final": {
+    "quantity": 0,
+    "total_cents": 0,
+    "displayed_total": "$0.00"
+  },
+  "contract": {
+    "status": "pass",
+    "contract": "empty-cart-zero-total",
+    "expected_cents": 0,
+    "actual_cents": 0
+  },
+  "trace": "replay/trace.zip",
+  "duration_ms": 829
+}

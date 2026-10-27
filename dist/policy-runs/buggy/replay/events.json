@@ -1,0 +1,88 @@
+{
+  "status": "completed",
+  "context_id": "22bde91b-24f1-4b0c-9083-f05a54506460",
+  "actions": [
+    {
+      "index": 1,
+      "action": {
+        "type": "click",
+        "name": "Add item"
+      },
+      "before": {
+        "quantity": 1,
+        "total_cents": 2400,
+        "displayed_total": "$24.00"
+      },
+      "status": "completed",
+      "after": {
+        "quantity": 2,
+        "total_cents": 4800,
+        "displayed_total": "$48.00"
+      }
+    },
+    {
+      "index": 2,
+      "action": {
+        "type": "click",
+        "name": "Remove item"
+      },
+      "before": {
+        "quantity": 2,
+        "total_cents": 4800,
+        "displayed_total": "$48.00"
+      },
+      "status": "completed",
+      "after": {
+        "quantity": 1,
+        "total_cents": 2400,
+        "displayed_total": "$24.00"
+      }
+    },
+    {
+      "index": 3,
+      "action": {
+        "type": "click",
+        "name": "Remove item"
+      },
+      "before": {
+        "quantity": 1,
+        "total_cents": 2400,
+        "displayed_total": "$24.00"
+      },
+      "status": "completed",
+      "after": {
+        "quantity": 0,
+        "total_cents": 2400,
+        "displayed_total": "$24.00"
+      }
+    }
+  ],
+  "console": [],
+  "page_errors": [],
+  "screenshots": [
+    "replay/00.png",
+    "replay/01.png",
+    "replay/02.png",
+    "replay/03.png"
+  ],
+  "decisions": [],
+  "initial": {
+    "quantity": 1,
+    "total_cents": 2400,
+    "displayed_total": "$24.00"
+  },
+  "stop_reason": "sequence_complete",
+  "final": {
+    "quantity": 0,
+    "total_cents": 2400,
+    "displayed_total": "$24.00"
+  },
+  "contract": {
+    "status": "fail",
+    "contract": "empty-cart-zero-total",
+    "expected_cents": 0,
+    "actual_cents": 2400
+  },
+  "trace": "replay/trace.zip",
+  "duration_ms": 1400
+}

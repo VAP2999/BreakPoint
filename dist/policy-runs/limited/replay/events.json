@@ -1,0 +1,48 @@
+{
+  "status": "completed",
+  "context_id": "6d2dc919-0e9a-4333-957d-7bcd6535a2e5",
+  "actions": [
+    {
+      "index": 1,
+      "action": {
+        "type": "click",
+        "name": "Add item"
+      },
+      "before": {
+        "quantity": 1,
+        "total_cents": 2400,
+        "displayed_total": "$24.00"
+      },
+      "status": "completed",
+      "after": {
+        "quantity": 2,
+        "total_cents": 4800,
+        "displayed_total": "$48.00"
+      }
+    }
+  ],
+  "console": [],
+  "page_errors": [],
+  "screenshots": [
+    "replay/00.png",
+    "replay/01.png"
+  ],
+  "decisions": [],
+  "initial": {
+    "quantity": 1,
+    "total_cents": 2400,
+    "displayed_total": "$24.00"
+  },
+  "stop_reason": "sequence_complete",
+  "final": {
+    "quantity": 2,
+    "total_cents": 4800,
+    "displayed_total": "$48.00"
+  },
+  "contract": {
+    "status": "not_applicable",
+    "contract": "empty-cart-zero-total"
+  },
+  "trace": "replay/trace.zip",
+  "duration_ms": 838
+}

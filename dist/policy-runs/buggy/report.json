@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "run_id": "20261027T195728Z-9d54d89a",
+  "created_at": "2026-10-27T19:57:28.271156+00:00",
+  "source": "offline-mock",
+  "model_driven": false,
+  "autonomous_discovery": false,
+  "fixture": "buggy",
+  "target": "http://localhost:8000/?mode=buggy",
+  "transport": "local-file-route",
+  "actions": [
+    {
+      "type": "click",
+      "name": "Add item"
+    },
+    {
+      "type": "click",
+      "name": "Remove item"
+    },
+    {
+      "type": "click",
+      "name": "Remove item"
+    }
+  ],
+  "timeout_seconds_per_phase": 30,
+  "max_steps": 8,
+  "phases": {
+    "exploration": {
+      "status": "completed",
+      "context_id": "84b6580a-b568-482c-97ae-b77eebfb60ca",
+      "actions": [
+        {
+          "index": 1,
+          "action": {
+            "type": "click",
+            "name": "Add item"
+          },
+          "before": {
+            "quantity": 1,
+            "total_cents": 2400,
+            "displayed_total": "$24.00"
+          },
+          "status": "completed",
+          "after": {
+            "quantity": 2,
+            "total_cents": 4800,
+            "displayed_total": "$48.00"
+          }
+        },
+        {
+          "index": 2,
+          "action": {
+            "type": "click",
+            "name": "Remove item"
+          },
+          "before": {
+            "quantity": 2,
+            "total_cents": 4800,
+            "displayed_total": "$48.00"
+          },
+          "status": "completed",
+          "after": {
+            "quantity": 1,
+            "total_cents": 2400,
+            "displayed_total": "$24.00"
+          }
+        },
+        {
+          "index": 3,
+          "action": {
+            "type": "click",
+            "name": "Remove item"
+          },
+          "before": {
+            "quantity": 1,
+            "total_cents": 2400,
+            "displayed_total": "$24.00"
+          },
+          "status": "completed",
+          "after": {
+            "quantity": 0,
+            "total_cents": 2400,
+            "displayed_total": "$24.00"
+          }
+        }
+      ],
+      "console": [],
+      "page_errors": [],
+      "screenshots": [
+        "exploration/00.png",
+        "exploration/01.png",
+        "exploration/02.png",
+        "exploration/03.png"
+      ],
+      "decisions": [
+        {
+          "step": 1,
+          "observation": {
+            "quantity": 1,
+            "total_cents": 2400,
+            "displayed_total": "$24.00",
+            "enabled_buttons": [
+              "Add item",
+              "Remove item",
+              "Reset cart"
+            ]
+          },
+          "status": "validated",
+          "decision": {
+            "type": "click",
+            "name": "Add item",
+            "summary": "Offline fixture policy: add item."
+          }
+        },
+        {
+          "step": 2,
+          "observation": {
+            "quantity": 2,
+            "total_cents": 4800,
+            "displayed_total": "$48.00",
+            "enabled_buttons": [
+              "Add item",
+              "Remove item",
+              "Reset cart"
+            ]
+          },
+          "status": "validated",
+          "decision": {
+            "type": "click",
+            "name": "Remove item",
+            "summary": "Offline fixture policy: remove item."
+          }
+        },
+        {
+          "step": 3,
+          "observation": {
+            "quantity": 1,
+            "total_cents": 2400,
+            "displayed_total": "$24.00",
+            "enabled_buttons": [
+              "Add item",
+              "Remove item",
+              "Reset cart"
+            ]
+          },
+          "status": "validated",
+          "decision": {
+            "type": "click",
+            "name": "Remove item",
+            "summary": "Offline fixture policy: remove item."
+          }
+        }
+      ],
+      "initial": {
+        "quantity": 1,
+        "total_cents": 2400,
+        "displayed_total": "$24.00"
+      },
+      "stop_reason": "contract_candidate",
+      "final": {
+        "quantity": 0,
+        "total_cents": 2400,
+        "displayed_total": "$24.00"
+      },
+      "contract": {
+        "status": "fail",
+        "contract": "empty-cart-zero-total",
+        "expected_cents": 0,
+        "actual_cents": 2400
+      },
+      "trace": "exploration/trace.zip",
+      "duration_ms": 1719
+    },
+    "replay": {
+      "status": "completed",
+      "context_id": "22bde91b-24f1-4b0c-9083-f05a54506460",
+      "actions": [
+        {
+          "index": 1,
+          "action": {
+            "type": "click",
+            "name": "Add item"
+          },
+          "before": {
+            "quantity": 1,
+            "total_cents": 2400,
+            "displayed_total": "$24.00"
+          },
+          "status": "completed",
+          "after": {
+            "quantity": 2,
+            "total_cents": 4800,
+            "displayed_total": "$48.00"
+          }
+        },
+        {
+          "index": 2,
+          "action": {
+            "type": "click",
+            "name": "Remove item"
+          },
+          "before": {
+            "quantity": 2,
+            "total_cents": 4800,
+            "displayed_total": "$48.00"
+          },
+          "status": "completed",
+          "after": {
+            "quantity": 1,
+            "total_cents": 2400,
+            "displayed_total": "$24.00"
+          }
+        },
+        {
+          "index": 3,
+          "action": {
+            "type": "click",
+            "name": "Remove item"
+          },
+          "before": {
+            "quantity": 1,
+            "total_cents": 2400,
+            "displayed_total": "$24.00"
+          },
+          "status": "completed",
+          "after": {
+            "quantity": 0,
+            "total_cents": 2400,
+            "displayed_total": "$24.00"
+          }
+        }
+      ],
+      "console": [],
+      "page_errors": [],
+      "screenshots": [
+        "replay/00.png",
+        "replay/01.png",
+        "replay/02.png",
+        "replay/03.png"
+      ],
+      "decisions": [],
+      "initial": {
+        "quantity": 1,
+        "total_cents": 2400,
+        "displayed_total": "$24.00"
+      },
+      "stop_reason": "sequence_complete",
+      "final": {
+        "quantity": 0,
+        "total_cents": 2400,
+        "displayed_total": "$24.00"
+      },
+      "contract": {
+        "status": "fail",
+        "contract": "empty-cart-zero-total",
+        "expected_cents": 0,
+        "actual_cents": 2400
+      },
+      "trace": "replay/trace.zip",
+      "duration_ms": 1400
+    }
+  },
+  "environment": {
+    "python": "3.12.14",
+    "playwright": "1.56.0",
+    "chromium": "141.0.7390.37"
+  },
+  "verdict": "confirmed",
+  "policy": {
+    "name": "offline-mock",
+    "model": null,
+    "decision_calls": 3,
+    "api_requests": 0,
+    "usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "usage_complete": true
+  },
+  "regression": "regression.py"
+}

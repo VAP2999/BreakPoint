@@ -1,0 +1,14 @@
+[
+  {
+    "type": "click",
+    "name": "Add item"
+  },
+  {
+    "type": "click",
+    "name": "Remove item"
+  },
+  {
+    "type": "click",
+    "name": "Remove item"
+  }
+]
