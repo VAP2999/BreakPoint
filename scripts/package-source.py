@@ -10,4 +10,4 @@ for folder in ['dist/runs','dist/policy-runs']:
 with zipfile.ZipFile(root/'dist/worker-source.zip','w',zipfile.ZIP_DEFLATED) as archive:
     for path in sorted(set(files)):
         archive.write(path,str(Path('breakpoint')/path.relative_to(root)))
-print('Source archive rebuilt')
+print('Source Archieve Rebuilt')

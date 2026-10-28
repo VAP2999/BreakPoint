@@ -1,0 +1,60 @@
+# ---------- macOS ----------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+Icon?
+
+# ---------- Secrets ----------
+# Never commit live credentials; keep the template tracked.
+.env
+.env.*
+!.env.example
+
+# ---------- Python ----------
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------- Node / JavaScript ----------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm/
+
+# ---------- Playwright ----------
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# ---------- BreakPoint run output ----------
+# Per-run reports, screenshots, traces, console logs, regression scripts.
+artifacts/
+# Exported live runs for the local report viewer (keep dist/ fixtures tracked).
+dist/live-run/
+
+# ---------- Editors / IDEs ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---------- Logs ----------
+*.log
